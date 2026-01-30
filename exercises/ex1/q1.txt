@@ -1,0 +1,10 @@
+# Question 1
+
+## Identify potential variables needed. 
+
+- `location` : the vital piece of information to be encoded
+- `offset` : integer number respresenting how many places to shift a certain character
+- `uncodedMessage` : Complete invitation containing party location that needs to be hidden.
+- `encodedMessage` : result after encryption algorithm is applied
+- `alphabet` : set of all valid symbols in an alphabet allowing to determine,
+- `lengthOfAlphabet` : trivial information, but useful when `shiftValue` necessitates wrapping either end of `alphabet`
