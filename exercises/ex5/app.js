@@ -104,4 +104,4 @@ Can you think of a way to sort the guests but keep the honored ones at the top?
 const honoredGuest = guests.splice(0,1); //?
 
 // sort the rest of the list then add the honored guest to the front
-finalGuestList = honoredGuest.concat(guests.sort()) //?
+const finalGuestList = honoredGuest.concat(guests.sort()) //?
