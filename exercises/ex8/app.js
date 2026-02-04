@@ -47,6 +47,8 @@ Create a function named `encryptMessage` that takes a word and a shift value as 
 function encryptMessage (word, shift){
     let encryptedMessage = "";
     for (letter of word) {
+        // call helper function to process each letter
+        // then add the result to encryptedMessage
         encryptedMessage += encryptLetter(letter, shift);
     }
     return encryptedMessage;
@@ -54,13 +56,9 @@ function encryptMessage (word, shift){
 
 const secret =encryptMessage(friend, shiftValue); //?
 
-
-
-
 /*
 ## Step 3 
 Create a function named `decryptLetter` that takes an encrypted letter and a shift value as parameters. This function should return the decrypted version of the letter.
-
 
 ### Hint 
 - Inside the function, find the index of the letter in the alphabet.
@@ -82,18 +80,6 @@ function decryptLetter (letter, shift) {
     }
     return decryptedLetter.toUpperCase();
 }
-
-/*
-### Answer 
-```jsx
-function decryptLetter (letter, shift)
-{
-  const index = alphabet.indexOf(letter.toLowerCase());
-  const newIndex = (index - shift + alphabet.length) % alphabet.length;
-  return alphabet[newIndex];
-}
-```
-*/
 
 /*
 ## Step 4 
