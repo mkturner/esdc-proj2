@@ -203,12 +203,12 @@ function encryptWithAlternatingShifts(message, shiftValue) {
         // reuse encrypt() and decrypt() functions defined earlier => robustness
         if (index % 2 === 0) {
             // even index, shift forward
-            alternatingMessage += encrypt(letter, shiftValue); //?
+            alternatingMessage += encrypt(letter, shiftValue); 
         } else {
             // odd index, shift backward
-            // bec careful not to call decrypt() with negative shiftValue
+            // be careful not to call decrypt() with negative shiftValue
             // would double-negate and shift forward instead == encrypt()
-            alternatingMessage += decrypt(letter, shiftValue);//?
+            alternatingMessage += decrypt(letter, shiftValue);
         }
     }
     return alternatingMessage;
